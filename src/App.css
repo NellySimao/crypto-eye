@@ -1,24 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
 body {
   background: #f1f1f1;
-  padding:50px;
+  font-family: 'Varela Round', sans-serif;
+  /* padding:50px; */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.App {
+  background:white;
 }
 
-div#crypto-container {
+.header {
+  background-color: #1786FB;
+  height: 69px;
+  margin: 0px 0px 50px 0px;
+  display: flex;
+}
+
+.header--title {
+  margin-top: auto!important;
+  margin-bottom: auto!important;
+  margin-left: 130px;
+  color: #f1f1f1;
+  display: inline-flex;
+}
+
+.crypto-container {
   background:white;
   width: 70%;
   margin: 0 auto 4px auto;
-  padding: 1em;
-  box-shadow: 1px 1px 0 lightgrey;
+  /* padding: 1em; */
+  /* box-shadow: 1px 1px 0 lightgrey; */
+}
+
+.crypto-table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.text-right {
+  text-align: right!important;
 }
 
 span.crypto {
   font-weight: bold;
 }
 
-#dollar {
+.dollar {
   float:right;
+  display: block;
 }
 
-#euro {
+.euro {
+  float: right;
   display: none;
+}
+
+.crypto-table td, .crypto-table th {
+  vertical-align: inherit !important;
+}
+.crypto-table td, .crypto-table th {
+  padding: .75rem;
+  vertical-align: top;
+}
+
+tr {
+  border-top: 1px solid #e9ecef;
+}
+
+/* thead {
+  border-bottom: 2px solid #e9ecef;
+} */
+
+tbody {
+  font-family: 'Muli', sans-serif;
+
+}
+
+th {
+  text-align: left;
 }
