@@ -42,7 +42,7 @@ body {
   border-collapse: collapse;
 }
 
-.text-right {
+.text-right, .marketcap {
   text-align: right!important;
 }
 

@@ -63,7 +63,6 @@ class App extends Component {
                     <td className="dollar"><NumberFormat value={this.state.cryptos[key].USD.PRICE} displayType={'text'} decimalprecision={2} thousandSeparator={true} prefix={'$'} /></td>
                     <td className="marketcap"><NumberFormat value={this.state.cryptos[key].USD.MKTCAP} displayType={'text'} decimalprecision={2} thousandSeparator={true} prefix={'$'} /></td>
                   </tr>
-                  
                 ))}
                 </tbody>
               </table>
