@@ -15,31 +15,58 @@ body {
 }
 
 .header {
-  background-color: #1786FB;
+  background: rgba(37,184,164,1);
+  background: -moz-linear-gradient(left, rgba(37,184,164,1) 0%, rgba(168,240,226,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(37,184,164,1)), color-stop(100%, rgba(168,240,226,1)));
+  background: -webkit-linear-gradient(left, rgba(37,184,164,1) 0%, rgba(168,240,226,1) 100%);
+  background: -o-linear-gradient(left, rgba(37,184,164,1) 0%, rgba(168,240,226,1) 100%);
+  background: -ms-linear-gradient(left, rgba(37,184,164,1) 0%, rgba(168,240,226,1) 100%);
+  background: linear-gradient(to right, rgba(37,184,164,1) 0%, rgba(168,240,226,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25b8a4', endColorstr='#a8f0e2', GradientType=1 );
   height: 69px;
-  margin: 0px 0px 50px 0px;
-  display: flex;
+
 }
 
 .header--title {
-  margin-top: auto!important;
-  margin-bottom: auto!important;
-  margin-left: 130px;
-  color: #f1f1f1;
-  display: inline-flex;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 50px;
+  text-align: center;
 }
 
-.crypto-container {
+.container {
   background:white;
-  width: 70%;
-  margin: 0 auto 4px auto;
-  /* padding: 1em; */
+  display: flex;
+  justify-content: center;
+  padding: 5em;
   /* box-shadow: 1px 1px 0 lightgrey; */
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .market, .marketcap {
+    display: none;
+  }
+
+  .header {
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  }
+
+  .header--title {
+    padding-left: 0px;
+  }
 }
 
 .crypto-table {
   margin: auto;
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .text-right, .marketcap {
@@ -69,12 +96,19 @@ span.crypto {
 }
 
 tr {
-  border-top: 1px solid #e9ecef;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 5px;
 }
 
-/* thead {
-  border-bottom: 2px solid #e9ecef;
-} */
+thead {
+  color: grey;
+}
+
+.crypto-header {
+  font-weight: 100;
+}
 
 tbody {
   font-family: 'Muli', sans-serif;

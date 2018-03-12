@@ -34,13 +34,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header">
-          <h1 className="header--title">Crypto Eye</h1>
+          <img className="header--title" src={require('./simplewatcher.png')} alt="Simple Watcher" />
         </div>
 
-          <div className="crypto-container">
+          <div className="container">
             <div className="table-container">
               <table className="crypto-table">
-                <thead>
+                <thead className="crypto-header">
                   <tr>
                     <th></th>
                     <th>Coin</th>
@@ -49,7 +49,7 @@ class App extends Component {
                     {/* <th className="text-right">1 Hour</th>
                     <th className="text-right">1 Day</th>
                     <th className="text-right">1 Week</th> */}
-                    <th className="text-right">Market Cap</th>
+                    <th className="text-right market">Market Cap</th>
                     {/* <th className="text-right">24h Volume</th> */}
                   </tr>
                 </thead>
